@@ -10,7 +10,84 @@
 <body>
 <h1>HI THEO!</h1>
 <p>hello!</p>
+</body><html>
+<style>
+body {
+   background-color: black;
+   color: white;
+   font-family: Arial, sans-serif;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.column {
+   width: 50%;
+   padding: 20px;
+}
+
+.left {
+   text-align: left;
+}
+
+.right {
+   text-align: right;
+}
+
+.logo {
+   font-size: 3em;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+
+.collapsible {
+   background-color: white;
+   color: black;
+   cursor: pointer;
+   padding: 18px;
+   width: 100%;
+   text-align: left;
+   outline: none;
+   font-size: 15px;
+}
+
+.content {
+   padding: 0 18px;
+   background-color: white;
+   color: black;
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.2s ease-out;
+}
+
+.collapsible:hover .content {
+   max-height: 500px;
+}
+</style>
+<body>
+   <div class="container">
+       <div class="column left">
+           <div class="logo">KOLLAPS</div>
+           <div class="collapsible">
+               <p>#1</p>
+               <p>#2</p>
+               <p>#3</p>
+           </div>
+       </div>
+       <div class="column right">
+           <div class="logo">KOLLAPS</div>
+           <div class="collapsible">
+               <p>#1</p>
+               <p>#2</p>
+               <p>#3</p>
+           </div>
+       </div>
+   </div>
 </body>
-<img src=C:\Users\TheoWilliams\Downloads\ken.jpg>
+</html>
  
 </html>
