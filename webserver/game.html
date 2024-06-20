@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/x-icon" href="https://i.scdn.co/image/ab6761610000e5eb6003f54411b80a01d56a32cf">
+        <p style="font-size: 20px; color:#00fa04;">
+            <a href="http://localhost:2809">home</a>
+            <a href="http://localhost:2809/about">about</a>
+            </p>
+    </head> 
+<head>
+<meta charset="Windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>theooo game</title>
+</head>
+<body bgcolor="white" >
+<body>
+<h1 style ="color:black;"> drag and drop</h1>
+<html>
+
+
+<head>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+</body>

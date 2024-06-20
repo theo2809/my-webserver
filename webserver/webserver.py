@@ -7,7 +7,8 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
         # Define paths and corresponding HTML files
         routes = {
             "/": "index.html",
-            "/about": "about.html"
+            "/about": "about.html",
+            "/game": "game.html"
         }
         # Get the requested path
         requested_path = self.path
@@ -32,7 +33,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
 
 
 def run():
-    port = 3121
+    port = 2809
 
     # Create the custom handler_class (a handler is a block of code that gets triggered when a certain event or request happens)
     handler=CustomHandler
