@@ -7,8 +7,8 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
         # Define paths and corresponding HTML files
         routes = {
             "/": "index.html",
+            "/about": "about.html"
         }
-
         # Get the requested path
         requested_path = self.path
 
@@ -30,8 +30,9 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
             # If the path is not in the routes, serve a 404 error
             self.send_error(404, "File not found")
 
+
 def run():
-    port = 8080
+    port = 3121
 
     # Create the custom handler_class (a handler is a block of code that gets triggered when a certain event or request happens)
     handler=CustomHandler
