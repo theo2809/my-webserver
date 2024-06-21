@@ -1,0 +1,8 @@
+FROM python:3.8.10
+WORKDIR workdirect
+CMD echo "hello world"
+COPY about.html workdirect/about.html
+COPY game.html workdirect/game.html
+COPY index.html workdirect/index.html
+COPY webserver.py workdirect/webserver.py 
+CMD ["python3 ./workdirect/webserver.py"]

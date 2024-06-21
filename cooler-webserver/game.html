@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/x-icon" href="https://i.scdn.co/image/ab6761610000e5eb6003f54411b80a01d56a32cf">
+        <p style="font-size: 20px; color:#00fa04;">
+            <a href="http://localhost:2809">home</a>
+            <a href="http://localhost:2809/about">about</a>
+            </p>
+    </head> 
+<head>
+<meta charset="Windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title style="color:white;">theooo game</title>
+</head>
+<body bgcolor="black" >
+<body>
+<h1 style ="color:white;"> drag and drop</h1>
+<html>
+
+
+<head>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+<style>
+
+      
+    </style>
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<img id="drag1" src="https://th.bing.com/th/id/OIP.ysJVgNf4tZqlrV_NHLhVPAHaHS?w=196&h=194&c=7&r=0&o=5&dpr=1.5&pid=1.7" draggable="true" ondragstart="drag(event)" width="336" height="336">
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"> width="336" height="336" x="100" y="50</div>
+</body>
