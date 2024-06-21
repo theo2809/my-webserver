@@ -10,11 +10,11 @@
 <head>
 <meta charset="Windows-1252">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>theooo game</title>
+<title style="color:white;">theooo game</title>
 </head>
-<body bgcolor="white" >
+<body bgcolor="black" >
 <body>
-<h1 style ="color:black;"> drag and drop</h1>
+<h1 style ="color:white;"> drag and drop</h1>
 <html>
 
 
@@ -27,7 +27,10 @@ function allowDrop(ev) {
 function drag(ev) {
   ev.dataTransfer.setData("text", ev.target.id);
 }
+<style>
 
+      
+    </style>
 function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
@@ -39,6 +42,6 @@ function drop(ev) {
 
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
-<img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
-
+<img id="drag1" src="https://th.bing.com/th/id/OIP.ysJVgNf4tZqlrV_NHLhVPAHaHS?w=196&h=194&c=7&r=0&o=5&dpr=1.5&pid=1.7" draggable="true" ondragstart="drag(event)" width="336" height="336">
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"> width="336" height="336" x="100" y="50</div>
 </body>
