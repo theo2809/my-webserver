@@ -1,7 +1,13 @@
 FROM python:3.8.10
-WORKDIR workdirectory
-COPY about.html workdirectory/about.html
-COPY game.html workdirectory/game.html
-COPY index.html workdirectory/index.html
-COPY webserver.py workdirectory/webserver.py 
-CMD ["python3 ./workdirectory/webserver.py"]
+ADD index.html index.html
+ADD webserver.py webserver.py
+ADD game.html game.html
+ADD about.html about.html
+# WORKDIR C:/Users/theow/coding/my-webserver/cooler-webserver/workdirectory
+# COPY about.html .
+# COPY game.html .
+# COPY index.html .
+# COPY webserver.py .
+EXPOSE 2809
+CMD ["python3", "webserver.py"]
+# ENTRYPOINT ["python3", "webserver.py"]
