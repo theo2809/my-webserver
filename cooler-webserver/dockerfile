@@ -8,6 +8,6 @@ ADD about.html about.html
 # COPY game.html .
 # COPY index.html .
 # COPY webserver.py .
-EXPOSE 2809
+EXPOSE 8000
 CMD ["python3", "webserver.py"]
 # ENTRYPOINT ["python3", "webserver.py"]
