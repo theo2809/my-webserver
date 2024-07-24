@@ -33,7 +33,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
 
 
 def run():
-    port = 2809
+    port = 8000
 
     # Create the custom handler_class (a handler is a block of code that gets triggered when a certain event or request happens)
     handler=CustomHandler
