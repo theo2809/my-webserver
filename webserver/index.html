@@ -39,11 +39,22 @@
 
 
 <body>
+  <h2 style="font-size: 20px; color:#00fa04;">Click button to change color</h2>
+  <p id="text" style="font-size: 20px; color:#00fa04;">London Paris Amsterdam</p>
+  
+  <button onclick="changeColor()">
+      Change Color
+  </button>
 
-    <h2 fill="#a000ff">HTML Buttons </h2>
-    <p>HTML buttons are defined with the button tag:</p>
-    
-    <button>Click me</button>
-    
-    </body>
+  <script>
+      function changeColor() {
+          var textElement = document.getElementById("text");
+          if (textElement.style.color === "red") {
+              textElement.style.color = "#00fa04"; // Green color
+          } else {
+              textElement.style.color = "red";
+          }
+      }
+  </script>
+</body>
 <html> 
